@@ -1,0 +1,47 @@
+/* 
+1) Desktop = Screen Width => 1200px+
+2) Tablet = Screen Width => 796 to 1200px
+3) Mobile = Screen Width => 0 to 768px */
+
+/* Mobile */
+@media(max-width:768px){
+    header{
+        background-color: skyblue;
+        }
+        header>nav>ul>li{
+            display: block;
+        }
+        header>nav>ul{
+            float: none;
+        }
+        header>nav{
+            padding: 20px;
+            text-align: center;
+        }
+        .banner1{
+            background-color: gray;
+        }
+        .banner2{
+            background-image: url(../images/pexels-pixabay-315938.jpg);
+        }
+    }
+
+/* TAB */
+@media(min-width:769px) and (max-width:1024px){
+    header{
+        background-color: teal;
+        }
+        header>nav>ul{
+            float: none;
+        }
+        header>nav{
+            padding: 20px;
+            text-align: center;
+        }
+        .banner1{
+            background-color: skyblue;
+        }
+        .banner2{
+            background-image: url(../images/pexels-thuany-marcante-1805053.jpg);
+        }
+    }
