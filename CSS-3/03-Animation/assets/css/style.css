@@ -1,0 +1,76 @@
+/* P1.HTML CODE */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #000;
+}
+.animation1{
+    background: black;
+    /* animation: bepractical; */
+    /* animation-duration: 10s; */
+    /* animation-iteration-count: infinite; */
+    animation: bepractical 10s infinite;
+}
+@keyframes bepractical {
+    from{background: red;}
+    to{background: blue;}
+}
+/* P2.HTML */
+.animation2{
+    background: url() no-repeat center;
+    background-size: 100%;
+    animation: animation_image 10s infinite;
+}
+@keyframes animation_image {
+    from{background: url(../images/pexels-vish-pix-17121023.jpg) no-repeat top;color:red}
+    to{background: url(../images/pexels-yakup-polat-17215592.jpg) no-repeat bottom; color: green;}
+}
+/* P3.HTML */
+.animation3{
+    background: hotpink;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3 {
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: crimson;
+        color: #fff;
+    }
+    25%{
+        top: 0px;
+        left: 600px;
+        background-color: mediumorchid;
+        color: #000;
+    }
+    50%{
+        top: 400px;
+        left: 600px;
+        background-color: chartreuse;
+        color: #0575e6;
+    }
+    75%{
+        top: 400px;
+        left: 0px;
+        background-color: teal;
+        color: gray;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: hotpink;
+        color: #000;
+    }
+}
