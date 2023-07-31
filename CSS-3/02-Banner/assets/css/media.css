@@ -24,12 +24,27 @@
         .banner2{
             background-image: url(../images/pexels-pixabay-315938.jpg);
         }
+        .backgroundvideo1{
+            display:block;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+        
+        }
+        .Banner{
+            display: flex;
+           justify-content: center;
+           align-items:center;
+           color: #fff;
+        }
     }
 
 /* TAB */
 @media(min-width:769px) and (max-width:1024px){
     header{
-        background-color: teal;
+        background-color: lightgreen;
         }
         header>nav>ul{
             float: none;
@@ -43,5 +58,18 @@
         }
         .banner2{
             background-image: url(../images/pexels-thuany-marcante-1805053.jpg);
+        }
+        .backgroundvideo2{
+            display: block;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .Banner{
+            display: flex;
+           justify-content: center;
+           align-items:center;
+           color: #fff;
         }
     }

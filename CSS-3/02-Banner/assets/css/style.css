@@ -86,8 +86,19 @@ header>nav>img{
     background: cover;
 }
 /* p8.HTML */
- .banner7{
-    background-clip: url(../media/pexels-ibrahim-bennett-15541408\ \(720p\).mp4);
+ .backgroundvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+  
+ }
+.backgroundvideo1{
+    display: none;
+ }
+ .backgroundvideo2{
+    display: none;
  }
 
 
