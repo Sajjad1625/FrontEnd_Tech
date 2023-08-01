@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check box and Radio buttons</title>
+    <style>
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 460px;
+            width: 600px;
+            margin: 30px;
+            background-color: lightgray;
+        }
+        section>form{
+            padding: 20px;
+        }
+      #checkbox{
+            padding: 20px;
+            margin: 20px;
+        }
+        input[type="radio" i] {
+            margin: 10px;
+        }
+        input[type="radio" i]:hover {
+            transform: scale(1.3);
+        }
+
+
+        input[type="checkbox" i] {
+            margin: 10px;
+        }
+        input[type="checkbox" i]:hover {
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <h1>CHECK BOX AND RADIO BUTTONS</h1>
+    <form>
+        <tr id="checkbox">
+            <td><label for="">Choose Languages:</label></td>
+            <td><input type="checkbox" name="Kannada" id="Languages" value="Kannada">Kannada</td>
+            <td><input type="checkbox" name="English" id="Languages" value="English">English</td>
+            <td><input type="checkbox" name="Hindi" id="Languages" value="Hindi">Hindi</td>
+            <td><input type="checkbox" name="Urdu" id="Languages" value="Urdu">Urdu</td>
+        </tr>
+        <br>
+        <tr id="radio">
+            <td><label for="">Select Gender:</label></td>
+            <td><input type="radio" name="Gender" id="male">Male</td>
+            <td><input type="radio" name="Gender" id="female">Female</td>
+        </tr>
+    </form>
+    </section>
+</body>
+</html>

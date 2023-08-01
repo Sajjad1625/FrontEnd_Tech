@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <style>
+        .commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.commonAnimation>button{
+    padding: 10px 15px;
+    background-color: red;
+}
+
+.commonAnimation>button{
+    animation: bepractical 5s infinite;
+}
+.commonAnimation>button:hover{
+    animation: bepractical1 5s infinite;
+}
+@keyframes bepractical {
+    from{background: red;}
+    to{background: blue;}
+}
+@keyframes bepractical1 {
+    from{background: blcak;}
+    to{background: red;}
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="commonAnimation">
+        <h1>THIS IS BUTTON ANIMATION..!</h1>
+        <button type="button">Button</button>
+    </section>
+</body>
+</html>

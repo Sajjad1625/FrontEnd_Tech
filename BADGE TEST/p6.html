@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROPDOWN MENU</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        section{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+            background-color: lightblue;
+            height: 600px;
+            justify-content: center;
+
+        }
+        
+
+        input:not([type="range"]):not([type="color"]){
+            padding: 8px;
+            background-color: aquamarine;
+            transition: 1s;
+        }
+        input:not([type="range"]):not([type="color"]):hover{
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section>
+      
+        <h2>THIS IS A DROPDOWN MENU </h2>
+    
+        <input type="text" name="indplayers" id="indplayers" placeholder="Players" list="india">
+            <datalist id="india">
+                <option>Rahul Dravid</option>
+                <option>Sachin Tendulkar</option>
+                <option>Brain Lara</option>
+                <option>Virat Kholi</option>
+                <option>MS Dhoni</option>
+                <option>Rohit Sharma</option>
+                <option>Irfan Pathan</option>
+                <option>Zahir Khan</option>
+                <option>AB De Villeirs</option>
+                <option>Kumar</option>
+                <option>Bhumrah</option>
+                <option>Root</option>
+            </datalist> 
+    </section>
+</body>
+</html>

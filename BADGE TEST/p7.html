@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        section{
+            display: flex;
+        }
+        section>.column1{
+            width: 300px;
+            height: 100vh;
+            border: 2px solid #000;
+            background-color: lightcoral;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        section>.column2{
+            border-color: aqua;
+            background: url(assets/images/hogwarts-legacy-harry-potter.png);
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            height: 100vh;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="column1">
+            <h1>Column1</h1>
+        </div>
+        <div class="column2">
+           <h1>Column2</h1>
+        </div>
+    </section>
+</body>
+</html>
