@@ -16,6 +16,26 @@
         align-items: center;
         justify-content: center;
     }
+
+
+
+
+    .desktop-banner,
+    .tablet-banner{
+        display: none;
+    }
+
+    .mobile-banner{
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+    .mobile-banner>video{
+        width: 100%;
+    }
+
+
+
 }
 /* TAB */
 @media(min-width:993px) and (max-width:1200px){
