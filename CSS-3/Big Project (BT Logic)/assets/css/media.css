@@ -1,0 +1,71 @@
+/* 1) Create a responsive navigation bar.
+2) Create a responsive video banner. */
+
+@media(max-width:768px){
+    header{
+        background-color: skyblue;
+        flex-flow: column;
+        }
+        header>nav>ul>li{
+            display: block;
+        }
+        header>nav>ul{
+            float: none;
+        }
+        header>nav{
+            padding: 20px;
+            text-align: center;
+        }
+        .backgroundvideo1{
+            display:block;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+            object-fit: cover;
+        }
+        .backgroundvideo, .backgroundvideo2{
+            display: none;
+        }
+        .Banner{
+            display: flex;
+           justify-content: center;
+           align-items:center;
+           color: #fff;
+        }
+    }
+@media(min-width:769px) and (max-width:1024px){
+    header{
+        background-color: lightgreen;
+        flex-direction: column;
+        justify-content: center;
+         }
+         header>nav>ul{
+         float: none;
+        }
+        header>nav{
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .backgroundvideo, .backgroundvideo1{
+            display: none;
+        }
+        .backgroundvideo2{
+            display: block;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            object-fit: cover;
+            width: 100%;
+        }
+        .Banner{
+            display: flex;
+           justify-content: center;
+           align-items:center;
+           color: #fff;
+        }
+    }
+    
