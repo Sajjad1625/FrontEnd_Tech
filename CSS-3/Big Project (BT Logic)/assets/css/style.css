@@ -351,7 +351,7 @@ footer form>div>input{
 
 
 
-
+/* 
 header{
     background-color: gray;
     display: flex;
@@ -421,4 +421,4 @@ header>img{
 .Banner>div:hover h1{
     color: rgba(255, 255, 255, 0.7);
     
-}
+} */

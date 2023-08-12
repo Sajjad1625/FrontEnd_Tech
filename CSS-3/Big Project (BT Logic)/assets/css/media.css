@@ -1,8 +1,31 @@
 /* 1) Create a responsive navigation bar.
 2) Create a responsive video banner. */
 
-@media(max-width:768px){
-    header{
+@media(max-width:992px){
+    [class*="col"]{
+        width: 100%;
+    }
+
+    /* ICONS */
+
+    .icons{
+        text-align: left;
+    }
+    .icons>b{
+        margin: auto;
+    }
+    /* NAVIGATION */
+    header>nav{
+        text-align: center;
+    }
+    header>nav>ul{
+        float: none;
+    }
+    header>nav>ul>li{
+        display: block;
+    }
+    
+    /* header{
         background-color: skyblue;
         flex-flow: column;
         }
@@ -33,10 +56,59 @@
            justify-content: center;
            align-items:center;
            color: #fff;
-        }
+        } */
     }
-@media(min-width:769px) and (max-width:1024px){
-    header{
+@media(min-width:993px) and (max-width:1200px){
+    .colTab1 {
+        width: 8.33%;
+    }
+    .colTab2 {
+        width: 16.66%;
+    }
+    .colTab3 {
+        width: 25%;
+    }
+    .colTab4 {
+        width: 33.66%;
+    }
+    .colTab5 {
+        width: 41.66%;
+    }
+    .colTab6 {
+        width: 50%;
+    }
+    .colTab7 {
+        width: 58.33%;
+    }
+    .colTab8 {
+        width: 66.66%;
+    }
+    .colTab9 {
+        width: 75%;
+    }
+    .colTab10 {
+        width: 83.33%;
+    }
+    .colTab11 {
+        width: 91.66%;
+    }
+    .colTab12 {
+        width: 100%;
+    }
+    
+    [class*="colTab"]{
+        float: left;
+        padding: 10px;
+    }
+    /* NAVIGATION */
+    header>nav{
+        text-align: center;
+    }
+    header>nav>ul{
+        float: none;
+    }
+
+    /* header{
         background-color: lightgreen;
         flex-direction: column;
         justify-content: center;
@@ -66,6 +138,6 @@
            justify-content: center;
            align-items:center;
            color: #fff;
-        }
+        } */
     }
     
