@@ -9,5 +9,23 @@
     <center>
         <h1>Call Back Function..!</h1>
     </center>
+    <hr>
+
+    <script>
+        function howAreYou(question, yes, no){
+           if (confirm(question)) {
+                yes();
+           } else {
+                no();
+           }
+        }
+        howAreYou(
+            "How Are You?",
+            function(){document.write(`<p>THis is SECOND parameter value, Good</p>`);},
+            function(){document.write(`<p>THis is THIRD parameter value, Bad</p>`);}
+
+        );
+        
+    </script>
 </body>
 </html>
