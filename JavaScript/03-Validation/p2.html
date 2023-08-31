@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="validateForm(event)">
+        <label>Enter User Email:</label>
+        <input type="text" placeholder="Email" name="email" id="email">
+        <strong id="error"></strong>
+        <button type="submit">SUBMIT USER</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            event.preventDefault();
+
+            let Email = document.getElementById("Email").value;
+
+            for(i=0; i<Email.length; i++){
+                if(Email[i]== "@"){
+                    document.getElementById("error").innerHTML = Email[i];
+                    document.getElementById("error").innerHTML = "Valid Email"
+                }
+               
+                }
+            }
+        
+    </script>
+</body>
+</html>

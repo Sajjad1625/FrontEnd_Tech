@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+    <form onsubmit="validateForm(event)">
+        <label>Enter User Email:</label>
+        <input type="text" placeholder="Email" name="email" id="email">
+        <strong id="error"></strong>
+        <button type="submit">SUBMIT USER</button>
+    </form>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+
+            let emailInput = document.getElementById("email").value;
+            let errorElement = document.getElementById("error");
+            
+            // Basic email validation using for loop
+            let isValid = true;
+            
+            for (let i = 0; i < emailInput.length; i++) {
+                if (emailInput[i] === '@') {
+                    isValid = false;
+                    break;
+                }
+            }
+            
+            if (isValid) {
+                errorElement.innerHTML = ""; // Clear any previous error messages
+                document.getElementById("error").innerHTML = "Email is valid!";
+            } else {
+                errorElement.innerHTML = "Invalid email format";
+            }
+        }
+    </script>
+</body>
+</html>
