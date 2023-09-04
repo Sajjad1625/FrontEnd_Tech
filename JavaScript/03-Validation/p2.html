@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email Validation</title>
 </head>
 <body>
-    <form onsubmit="validateForm(event)">
+    <form autocomplete="off" onsubmit="validateForm(event)">
         <label>Enter User Email:</label>
-        <input type="text" placeholder="Email" name="email" id="email">
-        <strong id="error"></strong>
+        <input type="text" placeholder="User Email" name="email" id="email">
+        <strong id="status"></strong>
         <button type="submit">SUBMIT USER</button>
     </form>
 
     <script>
-        function validateForm() {
+        function validateForm(event) {
             event.preventDefault();
 
-            let Email = document.getElementById("Email").value;
+            let email = document.getElementById("email").value;
+            let status = document.getElementById("status");
 
-            for(i=0; i<Email.length; i++){
-                if(Email[i]== "@"){
-                    document.getElementById("error").innerHTML = Email[i];
-                    document.getElementById("error").innerHTML = "Valid Email"
+            let regex = /^\S+@\S+\.\S+$/;
+
+            if(email.length === 0){
+                status.innerHTML = "Please Enter Email";
+                status.style.color = "orangered";
+            }
+            else{
+                if(regex.test(email) === false){
+                    status.innerHTML = "Invalid Email";
+                    status.style.color = "orangered";
                 }
-               
+                else{
+                    status.innerText = `Valid email`;
+                    status.style.color = "green";
                 }
             }
-        
+            
+        }
     </script>
 </body>
 </html>
