@@ -42,8 +42,10 @@
     <table>
         <thead>
             <tr>
-                <th>Key</th>
-                <th>Value</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Age</th>
             </tr>
         </thead>
         <tbody id="data-table"></tbody>
@@ -111,10 +113,10 @@
                 mobile: "9988992222",
                 age: 25
             },
-            // Add more users as needed
+            
         ];
 
-        // Function to create table rows
+       
         function createTableRow(key, value) {
             const row = document.createElement("tr");
             const keyCell = document.createElement("td");
@@ -129,7 +131,7 @@
             return row;
         }
 
-        // Function to populate the table
+        
         function populateTable(data) {
             const tableBody = document.getElementById("data-table");
 
@@ -141,7 +143,7 @@
             });
         }
 
-        // Call the populateTable function with your array of users
+      
         populateTable(users);
     </script>
 </body>
