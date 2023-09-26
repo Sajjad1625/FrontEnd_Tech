@@ -11,33 +11,51 @@
         <p>Finding Even Odd using Class</p>
     </div>
     <hr>
-    <form action="">
+    <form>
         <label for="number">Enter Number</label>
         <input type="number" name="number" id="number"><br>
-        <button type="submit">Submit</button>
+        <button type="button" id="submit">Submit</button>
+        <hr>
+        <h1 id="result"></h1>
     </form>
     <hr>
     <script>
-        class evenOdd { 
-            constructor(num) {
-                this._num = num;
+        class EvenOdd { 
+            constructor() {
+                this.initialize();
             }
-            isEven() {
-                return this._num % 2 === 0;
+            isEven(num) {
+                return num % 2 == 0;
             }
-            isOdd() {
-                return this._num % 2 !== 0;
+
+            isOdd(num) {
+                return num % 2 !== 0;
             }
+
+            initialize() {
+                const submitButton = document.getElementById('submit');
+                const resultElement = document.getElementById('result');
+                
+                submitButton.addEventListener('click', () => {
+                    const inputNumber = parseInt(document.getElementById('number').value);
+
+                    if (!isNaN(inputNumber)) {
+                        const numberChecker = new EvenOdd(inputNumber);
+                        if (numberChecker.isEven()) {
+                            resultElement.textContent = 'The number is even.';
+                        } else if (numberChecker.isOdd()) {
+                            resultElement.textContent = 'The number is odd.';
+                        }
+                    } else {
+                        resultElement.textContent = 'Please enter a valid number.';
+                    }
+                });
+            }
+
+           
         }
 
-        // Example usage:
-        const inputNumber = document.getElementById('number').value;
-        const numberChecker = new evenOdd(inputNumber);
-        if (numberChecker.isEven()) {
-            console.log('The number is even.');
-        } else if (numberChecker.isOdd()) {
-            console.log('The number is odd.');
-        }
+        new EvenOdd(); 
     </script>
 </body>
 </html>
